@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(xxd \"C:/Users/ASUS/Desktop/Code/WrittenTe/WrittenTest/WrittenTest/Program.cs\")",
+      "Bash(mkdir -p \"/mnt/c/Users/ASUS/Desktop/Code/WrittenTe/WrittenTest/problems/private\")",
+      "Bash(mkdir -p \"/mnt/c/Users/ASUS/Desktop/Code/WrittenTe/WrittenTest/problems/public\")",
+      "Bash(mkdir -p \"/mnt/c/Users/ASUS/Desktop/Code/WrittenTe/WrittenTest/.claude/skills/clean-code-style\")"
+    ]
+  }
+}

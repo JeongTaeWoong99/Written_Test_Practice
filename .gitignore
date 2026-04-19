@@ -1,0 +1,13 @@
+## C# / .NET
+bin/
+obj/
+*.user
+.vs/
+*.suo
+*.sln.docstates
+
+## JetBrains IDE
+.idea/
+
+## 비공개 문제 (실제 기업 필기 복기)
+problems/private/
