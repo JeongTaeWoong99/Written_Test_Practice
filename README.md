@@ -12,13 +12,13 @@ WrittenTest/
 ├── WrittenTest/              # C# 코드 실험용 콘솔 앱
 │   └── Program.cs
 │
-├── problems/
-│   ├── private/              # 🔒 실제 기업 필기 복기 (git 제외)
-│   │   └── [company]/
-│   │       ├── 01.md
-│   │       └── 02.md
+├── Problems/
+│   ├── Private/              # 🔒 실제 기업 필기 복기 (git 제외)
+│   │   └── [Company]/
+│   │       ├── 1번 문제.md
+│   │       └── 2번 문제.md
 │   │
-│   ├── public/               # 🌐 연습용 가상 문제 (공개)
+│   ├── Public/               # 🌐 연습용 가상 문제 (공개)
 │   │   └── YYYY-MM-DD_제목.md
 │   │
 │   └── TEMPLATE.md           # 문제 파일 템플릿
@@ -41,5 +41,5 @@ WrittenTest/
 
 ## 파일 네이밍 규칙
 
-- **private**: `problems/private/[회사명]/01.md` (문제 번호 순)
-- **public**: `problems/public/YYYY-MM-DD_제목.md`
+- **Private**: `Problems/Private/[회사명]/N번 문제.md`
+- **Public**: `Problems/Public/YYYY-MM-DD_제목.md`
