@@ -120,6 +120,34 @@ private void Update()
 }
 ```
 
+### 블록 내 논리 단계 분리
+
+같은 역할의 연속 작업은 붙여쓰고, 논리적 단계(취득 → 검증 → 실행)가 다른 코드는 빈 줄로 분리한다.
+
+```csharp
+// Good — 같은 역할의 연속 작업은 붙여쓰기
+_scheduleList.Remove(node);
+_nodeMap.Remove(id);
+
+// Good — 논리 단계가 다른 경우 빈 줄로 분리
+while (_scheduleQueue.Count > 0 && ...)
+{
+    var effect = _scheduleQueue.Dequeue();
+
+    if (_cancelledIds.Remove(effect.id)) continue;
+
+    Execute(effect);
+}
+
+// Bad — 논리 단계가 다른데 붙여씀
+while (_scheduleQueue.Count > 0 && ...)
+{
+    var effect = _scheduleQueue.Dequeue();
+    if (_cancelledIds.Remove(effect.id)) continue;
+    Execute(effect);
+}
+```
+
 ---
 
 ## 4. Properties & Serialization
